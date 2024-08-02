@@ -11,6 +11,17 @@ services:
         published: 3000
         protocol: tcp
         mode: host
+      - target: 5138
+        published: 5138
+        protocol: tcp
+        mode: host
+    volumes:
+      - "/home/poker/git/Orchestra/src:/home/project/orchestra"
+      - "orchestra-theia-plugins:/home/theia/.theia-ide/deployedPlugins"
 
 networks:
   orchestra-net:
+
+volumes:
+  orchestra-theia-plugins:  
+

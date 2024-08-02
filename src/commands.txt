@@ -1,0 +1,15 @@
+# comandi da eseguire come root quindi effettuare chowm su utente theia:theia
+npm create svelte@latest orchestra
+cd orchestra
+npm install
+
+npx svelte-add@latest tailwindcss
+
+npm install -D flowbite-svelte flowbite
+
+npm install -D flowbite-svelte-icons
+
+
+
+
+
