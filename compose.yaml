@@ -1,0 +1,16 @@
+services:
+  app:
+    image:  "svelte-theia-ide:latest"
+    container_name: "svelte-theia-ide"
+    hostname: "svelte-theia-ide"
+    restart: unless-stopped
+    networks:
+      orchestra-net:
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+        mode: host
+
+networks:
+  orchestra-net:
